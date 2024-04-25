@@ -1,14 +1,19 @@
+const bodyStyle = document.body.style;
+
 function color(kolor) {
   if (kolor == "green") {
-    document.bgColor = kolor;
-    document.body.style.color = "white";
+    bodyStyle.backgroundColor = kolor;
+    bodyStyle.color = "white";
   } else if (kolor == "red") {
-    document.bgColor = kolor;
-    document.body.style.color = "#333";
+    bodyStyle.backgroundColor = kolor;
+    bodyStyle.color = "#333";
   } else {
-    document.bgColor = kolor;
+    bodyStyle.backgroundColor = kolor;
+    // Для возврата цвета текста к изначальному
+    bodyStyle.color = fontColor;
   }
 }
+
 function drukuj() {
   window.print();
 }
