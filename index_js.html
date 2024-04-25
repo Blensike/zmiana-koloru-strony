@@ -15,22 +15,6 @@
     />
   </head>
   <body>
-    <script type="text/javascript">
-      function color(kolor) {
-        if (kolor == "green") {
-          document.bgColor = kolor;
-          document.body.style.color = "white";
-        } else if (kolor == "red") {
-          document.bgColor = kolor;
-          document.body.style.color = "#333";
-        } else {
-          document.bgColor = kolor;
-        }
-      }
-      function drukuj() {
-        window.print();
-      }
-    </script>
     <header>
       <h1>Witam, poniżej możesz zmienić background, po prostu ukaż myszką</h1>
     </header>
@@ -39,4 +23,5 @@
     <p onmouseover="color('yellow')">żółty</p>
     <button onclick="drukuj()">drukuj strone</button>
   </body>
+  <script src="script.js"></script>
 </html>
