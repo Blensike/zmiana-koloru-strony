@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function color(kolor) {
+        document.bgColor = kolor;
+      }
+      function drukuj() {
+        window.print();
+      }
+    </script>
+    <p onmouseover="color('green')">zielony</p>
+    <p onmouseover="color('red')">czerwony</p>
+    <p onmouseover="color('yellow')">żółty</p>
+    <button onclick="drukuj()">drukuj strone</button>
+  </body>
+</html>
